@@ -7,8 +7,8 @@ from Adafruit_IO import MQTTClient
 
 # set GPIO connection
 GPIO.setmode(GPIO.BOARD)
-GPIO.setup(31, GPIO.OUT)
-GPIO.output(31, GPIO.HIGH)
+GPIO.setup(32, GPIO.OUT)
+GPIO.output(32, GPIO.HIGH)
 
 # Set to your Adafruit IO key.
 # Remember, your key is a secret,
@@ -20,7 +20,7 @@ ADAFRUIT_IO_KEY = 'aio_TthI33he8iu1PHPmxSjKqC1l5STK'
 ADAFRUIT_IO_USERNAME = 'Bluff'
 
 # Set to the ID of the feed to subscribe to for updates.
-FEED_ID = 'room-light'
+FEED_ID = 'room-fan'
 
 
 # Define callback functions which will be called when certain events happen.
@@ -52,15 +52,15 @@ def message(client, feed_id, payload):
 
 def light_switch(out):
     if(out == 0):
-        GPIO.output(31, GPIO.HIGH)
+        GPIO.output(32, GPIO.HIGH)
         print("turned OFF room light !")
         return
     if(out == 1):
-        GPIO.output(31, GPIO.LOW)
+        GPIO.output(32, GPIO.LOW)
         print("turned ON room light !")
         return
     if(out == 2):
-        GPIO.output(31, GPIO.HIGH)
+        GPIO.output(32, GPIO.LOW)
         print("turned OFF room light !")
         return
 
