@@ -50,3 +50,6 @@ If all is fine,
 $sudo enable lights.service
 
 do the same for all 3 services.
+
+<h6> All Ready to GO </h6>
+Go to google asistant and command it !
