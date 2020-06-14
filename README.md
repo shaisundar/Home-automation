@@ -47,7 +47,7 @@ Add the 3 Python programs to services so that they start when PI board boots up.
 $sudo nano /lib/systemd/system/lights.service<br>
 $sudo systemctl start lights.service<br>
 If all is fine, <br>
-$sudo enable lights.service<br>
+$sudo systemctl enable lights.service<br>
 
 do the same for all 3 services.<br>
 
