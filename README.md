@@ -44,7 +44,7 @@ Chnage body content "value" as per need and command. <br>
 Step 8 - <br>
 Add the 3 Python programs to services so that they start when PI board boots up. <br>
 
-$sudo nano /etc/systemd/system/lights.service<br>
+$sudo nano /lib/systemd/system/lights.service<br>
 $sudo systemctl start lights.service<br>
 If all is fine, <br>
 $sudo enable lights.service<br>
