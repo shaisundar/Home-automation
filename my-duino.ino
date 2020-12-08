@@ -9,7 +9,7 @@
 #define AIO_SERVER      "io.adafruit.com"
 #define AIO_SERVERPORT  1883
 #define AIO_USERNAME    "Bluff"
-#define AIO_KEY         "aio_EyCb09tHKKJIqehzmA1h2pApgOvf"
+#define AIO_KEY         "key-here"
 
 static const uint8_t D1   = 5;
 static const uint8_t D5   = 14;
