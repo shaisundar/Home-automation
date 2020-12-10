@@ -1,0 +1,4 @@
+sudo systemctl enable '
+sudo systemctl start lights
+sudo systemctl start fan
+sudo systemctl start room-all
